@@ -1,13 +1,18 @@
 import './App.css';
-import First from './components/first';
 import Header from './Header';
+import Button from './Button';
 
 function App() {
+  function clicked() {
+    return alert("Button Smashed")
+  }
+
+  const name = "Fadhil Suheri"
+
   return (
     <>
-      <Header/>
-      <First hewan="ikan"/>
-      <First hewan="kuda"/>
+      <Header name={name}/>
+      <Button onclick={clicked}/>
     </>
   );
 }
