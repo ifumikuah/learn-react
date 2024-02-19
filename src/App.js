@@ -1,18 +1,11 @@
-import './App.css';
-import Header from './Header';
-import Button from './Button';
+import React, {useState} from 'react';
+import Card from './Card';
 
 function App() {
-  function clicked() {
-    return alert("Button Smashed")
-  }
-
-  const name = "Fadhil Suheri"
-
   return (
     <>
-      <Header name={name}/>
-      <Button onclick={clicked}/>
+      <Card/>
+      <Card/>
     </>
   );
 }
