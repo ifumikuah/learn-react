@@ -7,7 +7,9 @@ function App() {
 
   return (
     <>
-      <WelcomeNotif username="Simon"/>
+      <WelcomeNotif login={true} username="Simon"/>
+      <WelcomeNotif login={true}/>
+      <WelcomeNotif/>
       <Card name={"Fadhil"} hobby={"Mancing"} age={34}/>
       <Card name={"Deni"} hobby={"Membaca"} age={"25"}/>
     </>
