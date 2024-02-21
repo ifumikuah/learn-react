@@ -17,8 +17,10 @@ function App() {
   {
     name: "Apple",
     value: 95
-  },
-  {
+  }];
+
+  const fruits2 = 
+  [{
     name: "Orange",
     value: 62
   },
@@ -29,11 +31,12 @@ function App() {
   {
     name: "Pineapple",
     value: 86
-  }];
+  }]
   
   return (
     <>
       <List items={fruits} category="Fruits"/>
+      <List items={fruits2}/>
     </>
   );
 }
