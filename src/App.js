@@ -2,16 +2,38 @@
 import Card from './Card/Card';
 // import Button from './Button';
 import WelcomeNotif from './WelcomeNotif';
+import List from './List';
 
 function App() {
-
+  const fruits = 
+  [{
+    name: "Avocado",
+    value: 240
+  },
+  {
+    name: "Banana",
+    value: 105
+  },
+  {
+    name: "Apple",
+    value: 95
+  },
+  {
+    name: "Orange",
+    value: 62
+  },
+  {
+    name: "Mango",
+    value: 60
+  },
+  {
+    name: "Pineapple",
+    value: 86
+  }];
+  
   return (
     <>
-      <WelcomeNotif login={true} username="Simon"/>
-      <WelcomeNotif login={true}/>
-      <WelcomeNotif/>
-      <Card name={"Fadhil"} hobby={"Mancing"} age={34}/>
-      <Card name={"Deni"} hobby={"Membaca"} age={"25"}/>
+      <List items={fruits} category="Fruits"/>
     </>
   );
 }
