@@ -36,3 +36,20 @@ body {
 .login-true {
   background-color: #198754;
 }
+
+label {
+  margin: .6rem 0;
+}
+
+.motto-live {
+  width: 200px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}

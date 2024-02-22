@@ -1,11 +1,12 @@
-import Button from "./Button";
-import Counter from "./Counter";
+import Form from "./Form";
+import RadioButtons from "./RadioButtons";
 
 function App() {
 
   return (
     <>
-      <Counter/>
+      <Form/>
+      <RadioButtons/>
     </>
   );
 }
