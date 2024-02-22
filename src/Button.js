@@ -8,10 +8,14 @@ function Button() {
     border: "none",
     cursor: "pointer"
   }
+
+  const executor = (event, str) => {
+    event.target.innerText = str;
+  }
   
   return (
     <>
-      <button style={styles}>button</button>
+      <button onClick={(e) => executor(e, "Wooo!")} style={styles}>Touch Me!</button>
     </>
   )
 };
