@@ -1,4 +1,4 @@
-function Button() {
+function Button({executor}) {
   const styles = {
     padding: ".6rem 1rem",
     backgroundColor: "#3d9956",
@@ -9,13 +9,9 @@ function Button() {
     cursor: "pointer"
   }
 
-  const executor = (event, str) => {
-    event.target.innerText = str;
-  }
-  
   return (
     <>
-      <button onClick={(e) => executor(e, "Wooo!")} style={styles}>Touch Me!</button>
+      <button onClick={executor} style={styles}>Touch Me!</button>
     </>
   )
 };
