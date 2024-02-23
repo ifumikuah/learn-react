@@ -53,3 +53,8 @@ label {
   display: flex;
   flex-direction: column;
 }
+
+.color-swatch {
+  width: 200px;
+  height: 200px;
+}

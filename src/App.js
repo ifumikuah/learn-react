@@ -1,12 +1,10 @@
-import Form from "./Form";
-import RadioButtons from "./RadioButtons";
+import ColorPicker from "./ColorPicker";
 
 function App() {
 
   return (
     <>
-      <Form/>
-      <RadioButtons/>
+      <ColorPicker/>
     </>
   );
 }
