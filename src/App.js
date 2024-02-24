@@ -1,13 +1,16 @@
-import Counter from "./Counter";
-import Cycle from "./Cycle";
-
+import Car from "./Car";
+import Plane from "./Plane";
 
 function App() {
+  const car = {
+    model: "General Dynamics F18EX",
+    year: 2013
+  }
 
   return (
     <>
-      {/* <Counter/> */}
-      <Cycle/>
+      <Plane/>
+      {/* <Car obj={car}/> */}
     </>
   );
 }
