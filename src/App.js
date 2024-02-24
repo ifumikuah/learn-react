@@ -1,16 +1,11 @@
-import Car from "./Car";
-import Plane from "./Plane";
+import Fish from "./Fish";
+import List from "./List";
 
 function App() {
-  const car = {
-    model: "General Dynamics F18EX",
-    year: 2013
-  }
 
   return (
     <>
-      <Plane/>
-      {/* <Car obj={car}/> */}
+      <List/>
     </>
   );
 }
