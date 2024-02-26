@@ -1,33 +1,42 @@
-import React, {useState} from "react"
+import React, { useState } from "react"
 
-export default function List({array}) {
-  const [list, setList] = useState(array)
+export default function List () {
+  const [list, setList] = useState([{year: new Date().getFullYear(), name: "Adolf"}])
+  const [objName, setObjName] = useState("")
+  const [objYear, setObjYear] = useState(new Date().getFullYear())
 
-  const addToList = () => {
-    if (document.getElementById("listInput").value) {
-      const queuedItem = document.getElementById("listInput").value;
+  const addObj = () => {
+    if (objName && objYear) {
+      const obj = {
+        year: objYear,
+        name: objName
+      }
   
-      document.getElementById("listInput").value = ""
-      setList(l => [...l, queuedItem])
+      setList(l => [...l, obj])
+      setObjName("")
+      setObjYear(new Date().getFullYear())
     }
   }
-  const delFromList = (elementKey) => {
+  const handleYearChange = (ev) => {
+    setObjYear(ev.target.value)
+  }
+  const handleNameChange = (ev) => {
+    setObjName(ev.target.value)
+  }
+  const delObj = (id) => {
     setList(
-      l => l.filter((_, i) => i !== elementKey)
+      l => l.filter((_,i) => i !== id)
     )
   }
 
   return (
     <>
       <ul>
-        {list.map((x,i) => <li onClick={() => delFromList(i)} key={i}>{x}</li>)}
+        {list.map((x, id) => <li key={id} onClick={() => delObj(id)}>{x.year}, {x.name}</li>)}
       </ul>
-      <input id="listInput" placeholder="Insert an Item"/>
-      <button onClick={addToList}>ADD</button>
+      <input style={{display: "block"}} type="number" placeholder="year" value={objYear} onChange={handleYearChange}/>
+      <input style={{display: "block"}} type="text" placeholder="name" value={objName} onChange={handleNameChange}/>
+      <button onClick={addObj}>SUBMIT</button>
     </>
   )
-}
-
-List.defaultProps = {
-  array: ["Click an item", "To delete from lists"]
 }
