@@ -1,10 +1,10 @@
-import List from "./List";
+import Todo from "./Todo";
 
 function App() {
 
   return (
     <>
-      <List/>
+      <Todo/>
     </>
   );
 }

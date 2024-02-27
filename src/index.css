@@ -1,5 +1,5 @@
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: "Manrope", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -14,47 +14,94 @@ h3, h4, h5, h6 {
   margin: .3rem 0;
 }
 
+ul, li {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.welcome-notif {
-  margin: .5rem;
-  padding: .3rem 1rem;
+  background-color: #232e40;
   color: #fff;
-  font-weight: 400;
-  border-radius: 8px;
 }
 
-.login-false {
-  background-color: #dc3545;
+.TodoApp {
+  width: 600px;
+  margin: 3rem auto 0;
 }
 
-.login-true {
-  background-color: #198754;
+.todo-header {
+  margin-bottom: 3rem;
+  text-align: center;
+  font-size: 1.25rem;
 }
 
-label {
-  margin: .6rem 0;
-}
-
-.motto-live {
-  width: 200px;
-}
-
-.flex {
-  display: flex;
-}
-
-.flex-col {
+.todo-body {
   display: flex;
   flex-direction: column;
 }
 
-.color-swatch {
-  width: 200px;
-  height: 200px;
+.todo-input {
+  margin: 0 auto;
+  display: inline-block;
+}
+
+.todo-tasks {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.task {
+  margin: .3rem 0;
+  padding: .6rem 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.task-name {
+  font-size: 1.125rem;
+  flex: 1
+}
+
+.button {
+  margin: 0 .2rem;
+  padding: .6rem 1rem;
+  background-color: #736efc;
+  color: #232e40;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 6px 0 0 #343388;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: hsl(242, 96%, 76%);
+  color: hsl(217, 29%, 24%);
+}
+
+.button:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px 0 0 #343388;
+}
+
+input[type= "text"] {
+  margin: .2rem;
+  background-color: hsla(0, 0%, 0%, 0.4);
+  border: none;
+  width: 400px;
+  padding: .6rem;
+  font-size: 1.125rem;
+  border-radius: 4px;
+  color: #fff;
+}
+
+input[type= "text"]:focus {
+  outline-color: #736efc;
+  outline-style: solid;
+  outline-width: 2px;
+  border-radius: 4px;
+}
+
+input[type= "text"]::placeholder {
+  color: hsla(0, 0%, 100%, 0.6);
 }
