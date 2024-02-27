@@ -5,10 +5,12 @@ export default function Todo() {
   const [task, setTask] = useState("");
 
   const addTask = () => {
-    const storeTask = task;
-
-    setTasks((tks) => [...tks, storeTask]);
-    setTask("");
+    if (task) {      
+      const storeTask = task;
+  
+      setTasks((tks) => [...tks, storeTask]);
+      setTask("");
+    }
   };
   const taskinputTrack = (target) => {
     setTask((tk) => (tk = target.target.value));
