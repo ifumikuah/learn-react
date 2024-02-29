@@ -1,10 +1,10 @@
-import Cursor from "./Cursor";
+import Clock from "./Clock";
 
 function App() {
 
   return (
     <>
-      <Cursor/>
+      <Clock/>
     </>
   );
 }
