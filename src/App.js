@@ -1,10 +1,10 @@
-import Todo from "./Todo";
+import Cursor from "./Cursor";
 
 function App() {
 
   return (
     <>
-      <Todo/>
+      <Cursor/>
     </>
   );
 }
