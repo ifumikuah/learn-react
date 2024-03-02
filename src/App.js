@@ -1,10 +1,10 @@
-import UseRef from "./UseRef";
-import UseRef2 from "./UseRef2";
+import Stopwatch from "./Stopwatch";
+
 
 function App() {
   return (
     <>
-      <UseRef/>
+      <Stopwatch/>
     </>
   );
 }

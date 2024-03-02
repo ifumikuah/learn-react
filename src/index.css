@@ -20,16 +20,32 @@ ul, li {
 }
 
 body {
-  /* height: 100vh;
+  height: 100vh;
   background-color: #191516;
   color: white;
   display: flex;
   justify-content: center;
-  align-items: center; */
+  align-items: center;
   margin: 1rem;
 }
 
-.container {
-  padding: 1rem;
-  border: 2px solid black;
+.Stopwatch {
+
+}
+
+.Stopwatch h2 {
+  font-weight: 400;
+  font-size: 5rem;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  font-size: 1rem;
+  font-family: inherit;
+  padding: 8px 16px;
+  margin: 6px;
 }
